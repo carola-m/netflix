@@ -1,0 +1,44 @@
+.div-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+  .image{
+    width: 350px;
+    height: 280px;
+    object-fit: contain;
+    overflow:hidden;  
+}
+
+.image:hover{
+  -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+
+.div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.span::before {
+    content: attr(data-number);
+  bottom: -10px; /* Ajusta la posición vertical de la porción inferior del número */
+  left: -55px; /* Ajusta la posición horizontal del número */
+  font-weight: bold;
+  color: rgba(46, 46, 46, 0.937); /* Color del número */
+  background-color: black; /* Fondo del número */
+  width: 10px; /* Ancho del número */
+  text-align: center; /* Centra el número horizontalmente */
+  font-size: 1600%;
+  z-index: -1; /* Asegura que el número esté detrás de la imagen */ 
+  }
+
+  .span{
+    
+   
+    color: white; /* Color del número */
+    background-color: black; /* Fondo del número */
+    width: 25px; /* Ancho del número */
+    text-align: center; /* Centra el número horizontalmente */
+    z-index: -1; /* Asegura que el número esté detrás de la imagen */
+    }

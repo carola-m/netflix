@@ -1,0 +1,10 @@
+<h2>{{infoPopular.section}}</h2>
+
+<div class="div-gallery">
+    <ng-container *ngFor="let film of infoPopular.films; let i = index">
+        <div class="div" >
+            <span class="span" [attr.data-number]="i + 1"></span>
+            <img class="image" src="{{film.image}}" alt="{{film.title}}">
+        </div>
+    </ng-container>
+</div>

@@ -1,0 +1,19 @@
+.image{
+        width: 300px;
+        height: 250px;
+        object-fit: contain;
+        cursor: pointer;
+        overflow:hidden;
+}
+
+.titulo-film{
+    font-size: 20px;
+    margin: 0 70px;
+}
+
+.image:hover{
+    -webkit-transform:scale(1.5);transform:scale(1.5);
+}
+
+
+
